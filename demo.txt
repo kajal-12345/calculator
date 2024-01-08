@@ -1,0 +1,48 @@
+Scanner sc = new Scanner(System.in);
+	int val1;
+	int val2;
+	int x = 1;
+	System.out.println("Which operation do you want to perform ?");	
+	String sign = sc.next();
+	switch(sign) {
+	case "+" :do {
+		System.out.println("Enter number1: ");
+		try {		
+				val1 = Integer.parseInt(sc.next());	
+			System.out.println("Enter number2: ");
+			 val2 = Integer.parseInt(sc.next());
+				int ans = add(val1,val2);
+				System.out.println("sum is "+ans);
+			++x;
+		}
+		catch(Exception e) {
+//			System.out.println("Enter number1: ");
+//			double val11 = Double.parseDouble(sc.next());
+//			System.out.println("Enter number2: ");
+//			double val12 = Double.parseDouble(sc.next());
+//			double ans = add(val11,val12);
+//            System.out.println("sum is "+ans);        
+		}
+	}while(x==1);
+	break;
+	case "-" : do {
+		System.out.println("Enter number1: ");
+		try {		
+				val1 = Integer.parseInt(sc.next());	
+			System.out.println("Enter number2: ");
+			 val2 = Integer.parseInt(sc.next());
+				int ans = add(val1,val2);
+				System.out.println("sum is "+ans);
+			++x;
+		}
+		catch(Exception e) {
+//			System.out.println("Enter number1: ");
+//			double val11 = Double.parseDouble(sc.next());
+//			System.out.println("Enter number2: ");
+//			double val12 = Double.parseDouble(sc.next());
+//			double ans = add(val11,val12);
+//            System.out.println("sum is "+ans);        
+		}
+	}while(x==1);
+
+	
